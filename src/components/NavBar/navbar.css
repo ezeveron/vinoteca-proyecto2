@@ -1,0 +1,150 @@
+header {
+    background-color: transparent;
+    margin-top: 15px;
+}
+
+.header-logo {
+    cursor: pointer;
+    height: 100px;
+}
+
+.header-carrito {
+    cursor: pointer;
+    height: 50px;
+}
+
+.header-nav {
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    background: transparent;
+    background-size: 15%;
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+.header-nav-lista {
+    padding-top: 50%;
+    box-shadow: 0 0 6px black;
+    text-decoration: none;
+}
+
+.header-menu {
+    text-decoration: none;
+    color: red;
+    font-size: 35px;
+}
+
+.header-menu-logo {
+    width: 50px;
+    background-color: transparent;
+}
+
+.header-nav-link {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    cursor: pointer;
+
+}
+
+#menu {
+    display: block;
+    background-color: rgba(17, 16, 16, 0.5);
+    width: 80%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 100;
+    transition: right 2s;
+}
+#menu2 {
+    display: block;
+    background-color: rgba(17, 16, 16, 0.5);
+    width: 80%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0%;
+    z-index: 100;
+    transition: right 2s;
+}
+
+
+.header-img-close {
+    width: 30px;
+}
+
+.header-nav-link {
+    background-color: transparent;
+    margin: 0px 2px;
+    padding: 5px 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+    color: white;
+}
+
+@media screen and (min-width: 576px) {
+    .header-menu-logo {
+        user-select: none;
+        /*escondo mi item*/
+        display: none;
+    }
+
+    #menu {
+        position: unset;
+        display: flex;
+        background-color: transparent;
+    }
+
+    .header-nav-lista {
+        box-shadow: none;
+        padding-top: 0%;
+        display: flex;
+        list-style: none;
+        /*borro las viñetas*/
+        flex-direction: row;
+        justify-content: center;
+        /* Alineo los vinculos en el centro*/
+        margin-left: 0px;
+        background-color: transparent;
+    }
+
+    .header-nav {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .header-nav-link {
+        background-color: transparent;
+        margin: 0px 2px;
+        padding: 5px 10px;
+        font-family: "Poppins", sans-serif;
+        font-size: 20px;
+        text-decoration: none;
+        transition: all 0.3s ease 0s;
+        color: white;
+    }
+
+
+    .header-nav-link :hover {
+        transition-duration: 0.5s;
+        background-color: rgb(186, 23, 23);
+    }
+
+    .header-nav-link-close {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    .header-logo{
+        height: 200px;
+    }
+}

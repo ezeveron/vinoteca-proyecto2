@@ -1,0 +1,37 @@
+.contador {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: transparent;
+    width: 50%;
+}
+ 
+.contadorValor {
+    font-size: 15px;
+    color: black;
+}
+ 
+.contadorBotones {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    column-gap: 15px;
+}
+ 
+.boton {
+    margin-top: 5px;
+    font-size: 15px;
+    padding: 1px 10px;
+    background-color: transparent;
+    color: black;
+    border: 1px solid rgb(235, 38, 12);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+ 
+.boton:hover {
+    background-color: rgb(248, 4, 4);
+    color: rgb(255, 255, 255);
+}
+ 
